@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddItemsActivity"
+    android:background="#A7B9F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center"
+            android:hint="Title.."
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/descr_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center"
+            android:hint="Discription.."
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/price_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="25dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center"
+            android:hint="Price.."
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/imeiResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="289dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/gray"
+            android:layout_marginTop="25dp"
+            android:padding="12dp"
+            android:text="---IMEI---"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/scanitemButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="55dp"
+            android:background="@drawable/button_background">
+
+            <TextView
+                android:id="@+id/scanItemAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="12dp"
+                android:text="SCAN ITEM"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/scanItemAdd"
+                android:src="@drawable/ic_scanner" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/imgNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/uploadimgbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/button_background">
+
+            <TextView
+                android:id="@+id/uploadImageAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="12dp"
+                android:text="UPLOAD IMAGE"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/uploadImageAdd"
+                android:src="@drawable/ic_upload_image_camera" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/additemButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/button_backgroundblack">
+
+            <TextView
+                android:id="@+id/addItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="12dp"
+                android:text="ADD MY ITEM"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/addItemText"
+                android:src="@drawable/ic_pluswhite" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

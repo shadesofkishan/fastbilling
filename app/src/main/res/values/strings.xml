@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Fast Billing</string>
+    <string name="title_home">Home</string>
+    <string name="title_quickscan">Quick Scan</string>
+    <string name="title_notifications">More</string>
+</resources>
