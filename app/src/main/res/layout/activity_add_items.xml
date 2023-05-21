@@ -22,6 +22,7 @@
             android:background="@drawable/edit_text_background"
             android:gravity="center"
             android:hint="Title.."
+            android:textColorHint="@color/gray"
             android:padding="5dp"
             android:textColor="@color/black"
             android:textSize="28sp" />
@@ -33,6 +34,7 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="35dp"
             android:layout_marginRight="25dp"
+            android:textColorHint="@color/gray"
             android:background="@drawable/edit_text_background"
             android:gravity="center"
             android:hint="Discription.."
@@ -48,6 +50,7 @@
             android:layout_marginTop="35dp"
             android:layout_marginRight="25dp"
             android:inputType="number"
+            android:textColorHint="@color/gray"
             android:maxLines="1"
             android:background="@drawable/edit_text_background"
             android:gravity="center"
