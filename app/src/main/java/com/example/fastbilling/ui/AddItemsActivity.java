@@ -139,6 +139,7 @@ public class AddItemsActivity extends AppCompatActivity {
         desc.setText("");
         price.setText("");
         imei.setText("---IMEI---");
+        imgNameTextView.setText("");
     }
 
     private void scanCode() {
